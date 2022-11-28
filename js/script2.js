@@ -5,9 +5,11 @@
 const listNumbers = [];
 
 let userNumbers = parseInt(prompt("Inserisci un numero"));
+let sum = 0;
 
-while(listNumbers[i < 50]) {
+
+while(listNumbers < 50) {
     userNumbers = parseInt(prompt("Inserisci un numero"));
-    i++;
+    sum += userNumbers;
 }
 console.log(listNumbers);
