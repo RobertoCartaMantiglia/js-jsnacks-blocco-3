@@ -4,7 +4,7 @@
 
 let userNumber = parseInt(prompt("scrivi un numero"));
 
-while(userNumber > 10) {
+while((userNumber > 10) || (userNumber < 1)) {
     userNumber = parseInt(prompt("scrivi un numero"));
 }
 console.log(userNumber);
