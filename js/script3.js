@@ -4,12 +4,12 @@
 
 // creo 2 array 
 
-let listone = ["pomo", "arancio", "limone", "mandarino", "zucchero", "caffé"];
+let listone = ["primo", "secondo", "terzo", "quarto", "quinto", "sesto"];
 
-let listina = ["crocchette", "cannella"];
+let listina = ["primo", "secondo"];
 
 while (listina.length < listone.length){
-    listina.push ("plus");
+    listina.push ("add +1");
 }
 
 console.log(listone);
