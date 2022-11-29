@@ -5,5 +5,9 @@
 let arrayA = ["a", "b", "c"];
 let arrayB = [1, 2, 3];
 
-let arrayC = arrayA.concat(arrayB);
-console.log(arrayC);
+let arrayC = [];
+
+for (let i=0; i< arrayA.length; i++){
+    arrayC.push(arrayA[i], arrayB[i]);
+}
+
