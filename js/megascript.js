@@ -17,4 +17,15 @@
 
  const array = [1,33,55,64,33,22,10,44];
 
- 
+ function getPElement (tag){
+    let p = document.createElement("p");
+    div.append(tag);
+    return p;
+ }
+
+ for (let i=0; i<array.length; i++){
+    if(array[i] % 2 === 0){
+        
+    }
+ }
+
