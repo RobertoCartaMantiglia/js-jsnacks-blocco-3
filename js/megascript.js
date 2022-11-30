@@ -15,17 +15,23 @@
  // se l'elemento è un numero pari, crei nuovo elemento e lo aggiungo al div verde
  // se l'elemento è un numero dispari, creo  nuovo elemento e lo aggiungo al div rosso
 
- const array = [1,33,55,64,33,22,10,44];
+ const numeri = [1,33,55,64,33,22,10,44];
 
- function getPElement (tag){
+ function getNewPElement (content){
     let p = document.createElement("p");
-    div.append(tag);
+    p.innerText = content;
     return p;
  }
 
- for (let i=0; i<array.length; i++){
-    if(array[i] % 2 === 0){
-        
+ const divPari = document.getElementById("pari");
+ const divDispari = document.getElementById("dispari");
+
+
+ for (let i=0; i<numeri.length; i++){
+    if(numeri[i] % 2 === 0){
+        divPari.append(getNewPElement(numeri[i]));
+    } else{
+        divDispari.append(getNewPElement(numeri[i]));
     }
  }
 
