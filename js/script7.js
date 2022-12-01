@@ -10,7 +10,20 @@
  const randomList = [];
 
 
-for(let i=0; i<startingList.length; i++){
-    randomList = randomList + Math.floor(Math.random() * (startingList[i]));
-    console.log(randomList);
+function getRandomNumber(numMin, numMax) {
+    if(numMin===numMax){
+        return numMax;
+    }
+    return Math.floor( Math.random()* (numMax - numMin +1) + numMin);
 }
+
+while(randomList.length < 10){
+    const randomIndex = getRandomNumber (0, startingList.length - 1);
+    const randomElement = startingList[randomIndex];
+
+    if(!randomList.includes(randomElement)){
+        randomList.push(randomElement);
+    }
+  
+}
+console.log(randomList);
