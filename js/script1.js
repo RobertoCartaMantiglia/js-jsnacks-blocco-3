@@ -2,9 +2,9 @@
 
 
 
-let userNumber = parseInt(prompt("scrivi un numero"));
+let userNumber = parseInt(prompt("inserisci un numero"));
 
-while((userNumber > 10) || (userNumber < 1)) {
-    userNumber = parseInt(prompt("scrivi un numero"));
+while (userNumber < 1 || userNumber > 10){
+    alert("inserisci un numero valido");
+    userNumber = parseInt(prompt("inserisci un numero"));
 }
-console.log(userNumber);
