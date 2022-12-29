@@ -2,9 +2,16 @@
 
 
 
-let userNumber = parseInt(prompt("inserisci un numero"));
+const userInput = document.querySelector('input');
+console.log(userInput);
+const bottone = document.querySelector('button');
+console.log(bottone);
 
-while (userNumber < 1 || userNumber > 10){
-    alert("inserisci un numero valido");
-    userNumber = parseInt(prompt("inserisci un numero"));
-}
+bottone.addEventListener('click', function () {
+    if (parseInt(userInput.value) < 1 || parseInt(userInput.value) > 10) {
+        alert('inserisci un numero tra uno e dieci');
+    } else {
+        alert('bravissimo!')
+    }
+})
+
