@@ -4,13 +4,13 @@
 
 // creo 2 array 
 
-let listone = ["primo", "secondo", "terzo", "quarto", "quinto", "sesto"];
-
-let listina = ["primo", "secondo"];
-
-while (listina.length < listone.length){
-    listina.push ("add +1");
-}
-
-console.log(listone);
+const listona = ['ciao', 'pasta', 'pizza', 'tazza', 'mazza'];
+const listina = ['germoglio', 'fiore'];
+console.log(listona);
 console.log(listina);
+
+while (listina.length < listona.length) {
+    let element = 'macchina';
+    listina.push(element);
+    console.log(listina);
+}
